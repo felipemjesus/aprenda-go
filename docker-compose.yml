@@ -1,10 +1,9 @@
-version: '3'
 services:
   app:
     build: .
     container_name: go
     volumes:
-      - "./:/go/src/app"
+      - "./:/app"
     ports:
       - "6060:8080"
-    working_dir: /go/src/app
+    working_dir: /app
